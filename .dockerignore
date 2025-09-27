@@ -1,0 +1,30 @@
+# Bytecode & cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Git & VCS
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# IDEs & Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Tests & coverage
+.pytest_cache/
+.coverage
+htmlcov/
