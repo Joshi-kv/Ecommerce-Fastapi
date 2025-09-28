@@ -52,7 +52,7 @@ def login(data: LoginRequest, db: Session = Depends(get_db)) -> JSONResponse:
         )
 
     access_token = create_access_token({"sub": str(user.id)})
-    refresh_token = create_access_token({"sub": str(user.id)})
+    refresh_token = create_refresh_token({"sub": str(user.id)})
 
     token_response = TokenResponse(
         access_token=access_token,
