@@ -74,7 +74,7 @@ def login(data: LoginRequest, db: Session = Depends(get_db)) -> JSONResponse:
         status_code=200,
         content={
             "result": "success",
-            "response": response.dict()   # convert Pydantic model to dict
+            "response": response.model_dump()   # convert Pydantic model to dict
         }
     )
 
