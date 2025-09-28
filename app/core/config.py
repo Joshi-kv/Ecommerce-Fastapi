@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     SECRET_KEY: str
     ALGORITHM: str
     ACCESS_TOKEN_EXPIRE_MINUTES: int
+    AES_SECRET_KEY: str
 
     # App Info
     APP_NAME: str = "FastAPI Multi-Vendor E-Commerce"
